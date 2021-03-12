@@ -40,6 +40,9 @@
                     right:'month, agendaWeek, agendaDay'
 
                 },
+                events:'/full-calendar',
+                selectable:true,
+                selectHelper:true,
 
             });
         
