@@ -15,9 +15,25 @@
     <title>Calendar</title>
   </head>
   <body>
-    <h1>Calendar</h1>
+        <div class="container">
+            <h1>Calendar</h1>
+            <div id="calendar"></div>
+
+        </div>
+
+
+
+
 <script>
     $(document).ready(function(){
+
+        $.ajaxSetup({
+            headers:{
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+            var calendar = $('#calendar').fullCalendar();
+        
     });
 </script>
     <!-- Optional JavaScript; choose one of the two! -->

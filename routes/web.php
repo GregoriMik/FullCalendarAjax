@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\FullCalenderController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('full-calender',[FullCalenderController::class, 'index']);
