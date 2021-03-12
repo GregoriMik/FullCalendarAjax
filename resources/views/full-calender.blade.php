@@ -32,7 +32,16 @@
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-            var calendar = $('#calendar').fullCalendar();
+            var calendar = $('#calendar').fullCalendar({
+                editable:true,
+                header:{
+                    left:'prev,next today',
+                    center:'title',
+                    right:'month, agendaWeek, agendaDay'
+
+                },
+
+            });
         
     });
 </script>
